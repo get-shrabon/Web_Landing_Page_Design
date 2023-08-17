@@ -253,5 +253,26 @@ h6 {
 /* About Section Style End */
 
 /* Review Section Style Here */
+.review{
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url("../images/home-bg.png");
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+  .client-img{
+    width: 100px !important;
+  }
+  .slide-content{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+  .carousel{
+    width: 50%;
+    margin-top: 40px;
+  }
 
 /* Review Section Style End */
