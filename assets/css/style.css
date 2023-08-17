@@ -192,14 +192,66 @@ h6 {
     position: relative;
     width: 90%;
     height: 100%;
-    left: 150px;
+    left: 190px;
     top: -150px;
   
+}
+.works{
+    width: 100% !important;
+    padding: 0px 30px;
+    margin-top: 40px !important;
+    overflow-x: hidden;
+}
+.padding-left{
+    padding-left: 40px;
 }
 @media screen and (max-width:576px) {
     .arrows{
         display: none;
     }
+    .container{
+        text-align: center;
+    }
+    .padding-left{
+        padding-left: 0px;
+    }
+    .hero-btn{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .work-items{
+        display: flex !important;
+        
+    }
+    .work-item{
+        width: 25% !important;
+        padding: 0rem !important;
+    }
+    .arrows{
+       background-size: 50%;
+        position: relative;
+        width: 90%;
+        height: 100%;
+        left: 105px;
+        top: -150px;
+    }
+    .all-title{
+        font-size: 30px;
+    }
+    .content-wrap img{
+        width: 100% !important;
+    }
+    .bank-content{
+        padding: 0rem !important;
+    }
+    .padding-left{
+        padding-left: 0px;
+    }
 }
 
 /* About Section Style End */
+
+/* Review Section Style Here */
+
+/* Review Section Style End */
