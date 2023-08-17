@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.frist-color {
+  color: #ffa713 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.nav-link {
+  transition-duration: 0.4s;
+  margin: 10px;
+  color: black !important;
+}
+.nav-link:active {
+  color: #ffa713 !important;
+}
+.active:active {
+  color: #ffa713 !important;
+}
+.nav-link:focus {
+  color: #ffa713 !important;
+}
+.nav-link:hover {
+  color: #ffa713 !important;
+}
+.navbar {
+  box-shadow: 1px 0px 5px 0px rgb(206, 205, 205);
+}
+
+/* Home Section Style Here */
+
+/* Home Section Style End */
