@@ -227,8 +227,10 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next "></div>
-              <div class="swiper-button-prev "></div>
+              <div class="arrow">
+                <span><i class="fa-solid fa-arrow-left button-prev"></i></span>
+              <span><i class="fa-solid fa-arrow-right button-next "></i></span>
+              </div>
             </div>
 
 
@@ -279,17 +281,17 @@
 
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 30,
       loop: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".button-next",
+        prevEl: ".button-prev",
       },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
     });
   </script>
 
