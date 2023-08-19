@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -173,56 +174,64 @@
 
     <!-- Review Section Here -->
     <div id="review" data-bs-spy="scroll" data-bs-target="#review" data-bs-root-margin="0px 0px -40%"
-      data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2 pb-5" tabindex="0">
+      data-bs-smooth-scroll="true" class="scrollspy-example  rounded-2 pb-5" tabindex="0">
       <div class=" mt-5 py-5">
         <p class="text-center">Reviews</p>
         <h2 class="fs-1 text-center">What Our Clients Says</h2>
         <div class="review">
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="slide-content">
-                  <img src="assets/images/10015.jpg" alt="" class="client-img rounded-circle">
-                  <div>
-                    <p>Mathematics as an expression of the human mind reflects the active will, the contemplative reason, and the desire for perfection</p>
-                    <h4>Summit Jhon <br>
-                      <span class="fs-6">CEO Machanical Inc.</span>
-                    </h4>
+
+          <body>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-content">
+                    <img class="rounded-circle" src="assets/images/10015.jpg" alt="">
+                    <div>
+                      <p><span><i class="fa-solid fa-quote-left fa-1x "></i></span> Mathematics as an expression of the
+                        human mind reflects the active will, the contemplative reason, and the desire for perfection
+                        <span><i class="fa-solid fa-quote-right fa-1x  "></i></span>
+                      </p>
+                      <h4>Alex Jhon <br>
+                        <span class="fs-6">Founder Of LLC</span>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-content">
+                    <img class="rounded-circle" src="assets/images/10014.jpg" alt="">
+                    <div>
+                      <p><span><i class="fa-solid fa-quote-left fa-1x "></i></span> Mathematics as an expression of the
+                        human mind reflects the active will, the contemplative reason, and the desire for perfection
+                        <span><i class="fa-solid fa-quote-right fa-1x  "></i></span>
+                      </p>
+                      <h4>Summtsa Ullo <br>
+                        <span class="fs-6">Founder Of LLC</span>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-content">
+                    <img class="rounded-circle" src="assets/images/10013.jpg" alt="">
+                    <div>
+                      <p><span><i class="fa-solid fa-quote-left fa-1x "></i></span> Mathematics as an expression of the
+                        human mind reflects the active will, the contemplative reason, and the desire for perfection
+                        <span><i class="fa-solid fa-quote-right fa-1x  "></i></span>
+                      </p>
+                      <h4>Modina Bhom<br>
+                        <span class="fs-6">Founder Of LLC</span>
+                      </h4>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="slide-content">
-                  <img src="assets/images/10014.jpg" alt="" class="client-img rounded-circle">
-                  <div>
-                    <p>Mathematics as an expression of the human mind reflects the active will, the contemplative reason, and the desire for perfection</p>
-                    <h4>Alexa Musti <br>
-                      <span class="fs-6">CEO Machanical Inc.</span>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="slide-content">
-                  <img src="assets/images/10013.jpg" alt="" class="client-img rounded-circle">
-                  <div>
-                    <p>Mathematics as an expression of the human mind reflects the active will, the contemplative reason, and the desire for perfection</p>
-                    <h4>Lhua Jhone <br>
-                      <span class="fs-6">CEO Machanical Inc.</span>
-                    </h4>
-                  </div>
-                </div>
-              </div>
+              <div class="swiper-button-next "></div>
+              <div class="swiper-button-prev "></div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+
+
         </div>
       </div>
 
@@ -264,7 +273,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
- 
+  <script src="https://kit.fontawesome.com/337002c4cc.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+
 </body>
 
 </html>
