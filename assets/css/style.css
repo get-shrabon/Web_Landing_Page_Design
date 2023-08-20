@@ -42,6 +42,9 @@ h6 {
 .navbar {
   box-shadow: 1px 0px 5px 0px rgb(206, 205, 205);
 }
+header{
+  background-color: white;
+}
 .nav-btn {
   background: #ffa713;
   background: -webkit-linear-gradient(to right, #ffa713, #ffd200) !important;
@@ -588,3 +591,19 @@ color: #ffa713;
  }
 }
 /* Footer Style End */
+
+#scroll-to-top {
+  background-color: #ffa713;
+  display: none;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 50%;
+  line-height: 45px;
+  color: #fff;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 999;
+}
