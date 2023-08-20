@@ -470,4 +470,121 @@ h6 {
   box-shadow: none !important;
   border: 1px solid #ffa713;
 }
+.news-container{
+  padding: 0px 30px;
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+  /* .news-title{
+    white-space: pre-wrap;
+  } */
+  .news-content {
+padding: 10px 10px;
+  }
+  .news-container{
+    padding: 0px 10px;
+  }
+}
+@media screen and (max-width:576px) {
+  .news-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .news-container{
+    padding: 0px 0px;
+  }
+  .news-content {
+    padding: 10px 0px;
+      }
+}
 /* Newsletter Section Style End */
+
+/* Footer Style Here */
+.footer{
+  padding: 30px 0px;
+  border-bottom: 1px solid #768199;
+  padding-bottom: 40px !important;
+}
+.footer i{
+  color: #ffa713;
+}
+.footer-icon a{
+    display: inline-block;
+    background-color: #f2f2f2;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffa713;
+    font-size: 12px;
+    margin-right: 5px;
+    transition-duration: .4s;
+
+}
+.footer-icon a i{
+  transition-duration: .4s;
+}
+.footer-icon a:hover{
+  background-color: #ffa713;
+}
+.footer-icon a:hover i{
+ color: white;
+}
+.footer-ancor a{
+text-decoration: none;
+color: black;
+transition-duration: .4s;
+}
+.footer-ancor a:hover{
+text-decoration: underline;
+color: #ffa713;
+}
+.footer-ancor{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 130px;
+}
+.left{
+  padding-left: 130px;
+}
+.footer-container{
+  padding: 0px 100px;
+}
+
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+  .footer-container{
+    padding: 5px 10px;
+  }
+  .left{
+    padding-left: 30px;
+  }
+  .footer-ancor{
+    padding-left: 30px;
+  }
+  .footer-col{
+    display: flex !important;
+  }
+  .colummn{
+    width: 30.33% !important;
+  }
+}
+@media screen and (max-width:576px) {
+  .left{
+    padding-left: 0px;
+  }
+  .footer-ancor{
+    padding-left: 0px;
+  }
+  .footer-container{
+    padding: 0px 20px;
+  }
+ .footer-content{
+  margin-top: 10px !important;
+ }
+}
+/* Footer Style End */
