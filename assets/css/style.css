@@ -396,34 +396,45 @@ transition-duration: .5s;
     .download-items{
         margin-top: 0 !important;
     }
+    .download-app{
+      justify-content: center !important;
+    }
 }
 /* Download Section Style End */
 
 
 /* Sponsor Slider Style Here */
-.sponsor {
+.logos {
     width: 100%;
     height: 100%;
-  }
-
-  .sponsor-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 0;
+    white-space: nowrap;
+    margin-top: 60px;
+    background: transparent !important;
+   
   }
-
-  .sponsor-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.logos-slide{
+  display: flex;
+  animation: 20s slide infinite linear;
+  /* z-index: -2; */
+}
+.logos-slide img{
+  opacity: .8;
+  transition-duration: .4s;
+  cursor: pointer;
+}
+.logos-slide img:hover{
+  opacity: 1;
+}
+@keyframes slide {
+  0%{
+    transform: translateX(0);
   }
-
-  .sponsor {
-    margin-left: auto;
-    margin-right: auto;
+  100%{
+    transform: translateX(-100%);
   }
+}
+ 
 /* Sponsor Slider Style End */
