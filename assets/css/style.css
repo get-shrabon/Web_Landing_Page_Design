@@ -4,6 +4,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body{
+  overflow-x: hidden;
+}
 .frist-color {
   color: #ffa713 !important;
 }
